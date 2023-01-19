@@ -1,8 +1,9 @@
-import { User } from './components/User';
-import { Job } from './components/Job';
-import { AgeRestricted } from './components/AgeRestricted';
+import { User } from "./components/User";
+import { Job } from "./components/Job";
+import { AgeRestricted } from "./components/AgeRestricted";
+import { Planets } from "./components/Planets";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -19,6 +20,13 @@ function App() {
         <h1 className="exercise-title">Exercise 2</h1>
         <div>
           <AgeRestricted />
+        </div>
+      </section>
+
+      <section>
+        <h1 className="exercise-title">Exercise 3</h1>
+        <div>
+          <Planets />
         </div>
       </section>
     </div>
