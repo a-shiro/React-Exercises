@@ -2,12 +2,18 @@ import { User } from "./components/User";
 import { Job } from "./components/Job";
 import { AgeRestricted } from "./components/AgeRestricted";
 import { Planets } from "./components/Planets";
+import { useState } from "react";
 
 import "./App.css";
 
 function App() {
+  // useState Hook
+  const [count, setCount] = useState(0);
+
+  // -----------------------------------
+
   return (
-    <div className="App">
+    <div className="App" style={{ display: "flex", flexWrap: "wrap" }}>
       <section>
         <h1 className="exercise-title">Exercise 1</h1>
         <div>
@@ -27,6 +33,34 @@ function App() {
         <h1 className="exercise-title">Exercise 3</h1>
         <div>
           <Planets />
+        </div>
+      </section>
+
+      <section>
+        <h1 className="exercise-title">Exercise 4</h1>
+        <div>
+          <button
+            onClick={() => {
+              setCount(count + 1);
+            }}
+          >
+            Increase
+          </button>
+          <button
+            onClick={() => {
+              setCount(count - 1);
+            }}
+          >
+            Decrease
+          </button>
+          <button
+            onClick={() => {
+              setCount(0);
+            }}
+          >
+            Set to Zero
+          </button>
+          <h1>{count}</h1>
         </div>
       </section>
     </div>

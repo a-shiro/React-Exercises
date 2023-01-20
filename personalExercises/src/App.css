@@ -2,7 +2,12 @@
   text-align: center;
 }
 
+section { 
+  margin: 0 3rem
+}
+
 .exercise-title { 
   color: green;
   font-size: 3rem;
 }
+
