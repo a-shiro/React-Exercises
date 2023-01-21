@@ -2,13 +2,19 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  // Ex 1
   const [count, setCount] = useState(0);
+
+  // Ex 2
   const [textVisible, setVisibility] = useState(true);
+
+  // Ex 3
+  let [boxColor, setBoxColor] = useState("green");
 
   return (
     <div className="App">
       <section>
-        <h1 className="exercise-title">Exercise 4</h1>
+        <h1 className="exercise-title">Exercise 1</h1>
         <div>
           <button
             onClick={() => {
@@ -36,7 +42,7 @@ function App() {
       </section>
 
       <section>
-        <h1 className="exercise-title">Exercise 5</h1>
+        <h1 className="exercise-title">Exercise 2</h1>
         <div>
           <p style={{ display: textVisible ? "block" : "none" }}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
@@ -51,6 +57,20 @@ function App() {
             Toggle Text
           </button>
         </div>
+      </section>
+
+      <section>
+        <h1 className="exercise-title">Exercise 3</h1>
+        <div style={{ backgroundColor: boxColor }}>This is a box</div>
+        <button
+          onClick={() => {
+            boxColor = boxColor === "green" ? "red" : "green";
+
+            setBoxColor(boxColor);
+          }}
+        >
+          Change Color
+        </button>
       </section>
     </div>
   );
