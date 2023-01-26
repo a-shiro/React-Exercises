@@ -12,14 +12,21 @@ export const TodoList = () => {
     const task = {
       id: todoList.length === 0 ? 1 : todoList.length + 1,
       taskName: newTask,
+      completed: false,
     };
 
     setTodoList([...todoList, task]);
   };
 
   const deleteTask = (id) => {
-    console.log(id);
     setTodoList(todoList.filter((task) => task.id !== id));
+  };
+
+  const completeTask = (id) => {
+    const task = todoList.filter((task) => task.id === id)[0];
+    task.completed = true;
+
+    setTodoList([...todoList]);
   };
 
   return (
@@ -32,7 +39,9 @@ export const TodoList = () => {
             <TaskList
               taskName={task.taskName}
               id={task.id}
+              completed={task.completed}
               deleteTask={deleteTask}
+              completeTask={completeTask}
             />
           ))}
         </ul>
@@ -44,7 +53,16 @@ export const TodoList = () => {
 const TaskList = (props) => {
   return (
     <div>
-      <li>{props.taskName}</li>
+      <li style={{ color: props.completed ? "green" : "black" }}>
+        {props.taskName}
+      </li>
+      <button
+        onClick={() => {
+          props.completeTask(props.id);
+        }}
+      >
+        Complete
+      </button>
       <button
         onClick={() => {
           props.deleteTask(props.id);
