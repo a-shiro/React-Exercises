@@ -23,10 +23,14 @@ export const TodoList = () => {
   };
 
   const completeTask = (id) => {
-    const task = todoList.filter((task) => task.id === id)[0];
-    task.completed = true;
-
-    setTodoList([...todoList]);
+    setTodoList(
+      todoList.map((task) => {
+        if (task.id === id) {
+          return { ...task, completed: true };
+        }
+        return task;
+      })
+    );
   };
 
   return (
@@ -52,10 +56,8 @@ export const TodoList = () => {
 
 const TaskList = (props) => {
   return (
-    <div>
-      <li style={{ color: props.completed ? "green" : "black" }}>
-        {props.taskName}
-      </li>
+    <div style={{ backgroundColor: props.completed ? "green" : "" }}>
+      <li>{props.taskName}</li>
       <button
         onClick={() => {
           props.completeTask(props.id);
