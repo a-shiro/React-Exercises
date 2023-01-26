@@ -1,5 +1,5 @@
-import "./App.css";
-import { ExerciseSection } from "./components/ExerciseSection";
+import "../App.css";
+import { ExerciseSection } from "./ExerciseSection";
 
 function App() {
   return (
@@ -23,13 +23,14 @@ function App() {
           }}
         >
           <option>---</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
+          <option value={1}>1. User Info</option>
+          <option value={2}>2. Age Restricted</option>
+          <option value={3}>3. Plantes</option>
+          <option value={4}>4. Counter</option>
+          <option value={5}>5. Hide Text</option>
+          <option value={6}>6. Box Colors</option>
+          <option value={7}>7. Todo List</option>
+          <option value={8}>8. Age Prediction</option>
         </select>
       </div>
 

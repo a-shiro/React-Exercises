@@ -6,6 +6,7 @@ import { Counter } from "./02. Hooks (useState)/Counter";
 import { HiddenText } from "./02. Hooks (useState)/HiddenText";
 import { BoxColors } from "./02. Hooks (useState)/BoxColors";
 import { TodoList } from "./02. Hooks (useState)/TodoList";
+import { AgePrediction } from "./03. Hooks (useEffect)/AgePrediction";
 
 export const ExerciseSection = () => {
   return (
@@ -43,6 +44,10 @@ export const ExerciseSection = () => {
 
       <section className="hidden" id={7}>
         <TodoList />
+      </section>
+
+      <section className="hidden" id={8}>
+        <AgePrediction />
       </section>
     </div>
   );
