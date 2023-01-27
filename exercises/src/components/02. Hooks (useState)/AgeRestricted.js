@@ -18,7 +18,7 @@ export const AgeRestricted = () => {
           setAge(randomNumber);
         }}
       >
-        Refresh Page
+        Generate Random Number
       </button>
     </div>
   );

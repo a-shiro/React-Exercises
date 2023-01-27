@@ -1,14 +1,26 @@
 import { useState } from "react";
 
 export const BoxColors = () => {
-  const [boxColor, setBoxColor] = useState("green");
+  const colors = [
+    "red",
+    "green",
+    "teal",
+    "brown",
+    "purple",
+    "yellow",
+    "orange",
+    "blue",
+  ];
+
+  const randomColor = () => colors[Math.floor(Math.random() * 7) + 1];
+  const [boxColor, setBoxColor] = useState(randomColor);
 
   return (
     <div>
       <div style={{ backgroundColor: boxColor }}>This is a box</div>
       <button
         onClick={() => {
-          setBoxColor(boxColor === "green" ? "red" : "green");
+          setBoxColor(randomColor);
         }}
       >
         Change Color
