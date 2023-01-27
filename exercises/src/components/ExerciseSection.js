@@ -9,10 +9,11 @@ import { TodoList } from "./02. Hooks (useState)/TodoList";
 import { AgePrediction } from "./03. Hooks (useEffect)/AgePrediction";
 import { CatFact } from "./03. Hooks (useEffect)/CatFact";
 import { Excuses } from "./03. Hooks (useEffect)/Excuses";
+import { Navbar } from "./04. React Router DOM/Navbar";
 
 export const ExerciseSection = () => {
   return (
-    <div>
+    <div className="exercise-box">
       <section className="hidden" id={1}>
         <div>
           <User name="Shiro" age={21} email="shiro@gmail.com" />
@@ -58,6 +59,10 @@ export const ExerciseSection = () => {
 
       <section className="hidden" id={10}>
         <Excuses />
+      </section>
+
+      <section className="hidden" id={11}>
+        <Navbar />
       </section>
     </div>
   );

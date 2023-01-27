@@ -1,7 +1,7 @@
 import "../App.css";
 import { ExerciseSection } from "./ExerciseSection";
 
-function App() {
+export function App() {
   return (
     <div>
       <div className="label-box">
@@ -33,12 +33,11 @@ function App() {
           <option value={8}>8. Age Prediction</option>
           <option value={9}>9. Random Cat Fact</option>
           <option value={10}>10. Random Excuses</option>
+          <option value={11}>11. Navigation Bar</option>
         </select>
       </div>
 
-      <div className="exercise-box">
-        <ExerciseSection />
-      </div>
+      <ExerciseSection />
     </div>
   );
 }
