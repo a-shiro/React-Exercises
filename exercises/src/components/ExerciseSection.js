@@ -1,6 +1,6 @@
 import { User } from "./01. Components and Props/User";
 import { Job } from "./01. Components and Props/Job";
-import { AgeRestricted } from "./01. Components and Props/AgeRestricted";
+import { AgeRestricted } from "./02. Hooks (useState)/AgeRestricted";
 import { Planets } from "./01. Components and Props/Planets";
 import { Counter } from "./02. Hooks (useState)/Counter";
 import { HiddenText } from "./02. Hooks (useState)/HiddenText";
