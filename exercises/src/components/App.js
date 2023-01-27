@@ -32,6 +32,7 @@ function App() {
           <option value={7}>7. Todo List</option>
           <option value={8}>8. Age Prediction</option>
           <option value={9}>9. Random Cat Fact</option>
+          <option value={10}>10. Random Excuses</option>
         </select>
       </div>
 
