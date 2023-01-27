@@ -25,7 +25,7 @@ export function App() {
           <option>---</option>
           <option value={1}>1. User Info</option>
           <option value={2}>2. Age Restricted</option>
-          <option value={3}>3. Plantes</option>
+          <option value={3}>3. Planets</option>
           <option value={4}>4. Counter</option>
           <option value={5}>5. Hide Text</option>
           <option value={6}>6. Box Colors</option>

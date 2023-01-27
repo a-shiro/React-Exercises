@@ -10,7 +10,10 @@ const planets = [
 export const Planets = () => {
   return (
     <div>
-      {planets.map((planet) => planet.isGasPlanet && <h2>{planet.name}</h2>)}
+      <h1>Gas Planets</h1>
+      {planets.map((planet) => planet.isGasPlanet && <p>{planet.name}</p>)}
+      <h1>Not Gas Planets</h1>
+      {planets.map((planet) => !planet.isGasPlanet && <p>{planet.name}</p>)}
     </div>
   );
 };
