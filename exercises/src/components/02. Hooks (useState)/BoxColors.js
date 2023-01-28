@@ -19,6 +19,7 @@ export const BoxColors = () => {
     <div>
       <div style={{ backgroundColor: boxColor }}>This is a box</div>
       <button
+        className="universal-btn"
         onClick={() => {
           setBoxColor(randomColor);
         }}

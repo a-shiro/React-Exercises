@@ -20,7 +20,9 @@ export const AgePrediction = () => {
           setInputValue(event.target.value);
         }}
       />
-      <button onClick={fetchData}>Show Results</button>
+      <button className="universal-btn" onClick={fetchData}>
+        Show Results
+      </button>
       <div>
         <h1>Predicted Age: {predictedAge}</h1>
       </div>

@@ -36,7 +36,9 @@ export const TodoList = () => {
   return (
     <div>
       <input onChange={handleChange}></input>
-      <button onClick={addTask}>Add</button>
+      <button className="universal-btn" onClick={addTask}>
+        Add
+      </button>
       <div>
         <ul>
           {todoList.map((task) => (
@@ -59,6 +61,7 @@ const TaskList = (props) => {
     <div style={{ backgroundColor: props.completed ? "green" : "" }}>
       <li>{props.taskName}</li>
       <button
+        className="universal-btn"
         onClick={() => {
           props.completeTask(props.id);
         }}
@@ -66,6 +69,7 @@ const TaskList = (props) => {
         Complete
       </button>
       <button
+        className="universal-btn"
         onClick={() => {
           props.deleteTask(props.id);
         }}

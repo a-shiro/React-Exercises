@@ -26,7 +26,9 @@ export const CatFact = () => {
 
   return (
     <div>
-      <button onClick={fetchData}>Generate Cat Fact</button>
+      <button className="universal-btn" onClick={fetchData}>
+        Generate Cat Fact
+      </button>
       <h1 style={{ color: factColor }}>{fact}</h1>
     </div>
   );

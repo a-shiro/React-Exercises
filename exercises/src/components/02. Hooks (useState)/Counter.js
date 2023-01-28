@@ -8,6 +8,7 @@ export const Counter = () => {
       <h1 className="exercise-title">Exercise 1</h1>
       <div>
         <button
+          className="universal-btn"
           onClick={() => {
             setCount(count + 1);
           }}
@@ -15,6 +16,7 @@ export const Counter = () => {
           Increase
         </button>
         <button
+          className="universal-btn"
           onClick={() => {
             setCount(count - 1);
           }}
@@ -22,6 +24,7 @@ export const Counter = () => {
           Decrease
         </button>
         <button
+          className="universal-btn"
           onClick={() => {
             setCount(0);
           }}

@@ -11,6 +11,7 @@ export const HiddenText = () => {
         placeat doloremque.
       </p>
       <button
+        className="universal-btn"
         onClick={() => {
           setVisibility(!textVisible);
         }}

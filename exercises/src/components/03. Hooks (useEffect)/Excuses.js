@@ -34,9 +34,15 @@ export const Excuses = () => {
   return (
     <div>
       <h1>Choose a category of excuse</h1>
-      <button onClick={() => fetchExcuse("party")}>Party</button>
-      <button onClick={() => fetchExcuse("family")}>Family</button>
-      <button onClick={() => fetchExcuse("office")}>Office</button>
+      <button className="universal-btn" onClick={() => fetchExcuse("party")}>
+        Party
+      </button>
+      <button className="universal-btn" onClick={() => fetchExcuse("family")}>
+        Family
+      </button>
+      <button className="universal-btn" onClick={() => fetchExcuse("office")}>
+        Office
+      </button>
       <h1>Excuse: {excuse}</h1>
     </div>
   );
