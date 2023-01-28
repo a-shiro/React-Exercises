@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const AgePrediction = () => {
   const [inputValue, setInputValue] = useState("");

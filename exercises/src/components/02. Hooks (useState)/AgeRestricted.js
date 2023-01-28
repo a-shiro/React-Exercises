@@ -14,6 +14,7 @@ export const AgeRestricted = () => {
         {age} - {age >= 5 ? "Above age" : "Under Age"}
       </h2>
       <button
+        className="universal-btn"
         onClick={() => {
           setAge(randomNumber);
         }}
