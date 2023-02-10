@@ -34,6 +34,7 @@ export function App() {
           <option value={9}>9. Random Cat Fact</option>
           <option value={10}>10. Random Excuses</option>
           <option value={11}>11. Navigation Bar</option>
+          <option value={12}>12. Standard Form</option>
         </select>
       </div>
 

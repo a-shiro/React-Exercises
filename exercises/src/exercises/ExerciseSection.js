@@ -10,6 +10,7 @@ import { AgePrediction } from "./03. Hooks (useEffect)/AgePrediction";
 import { CatFact } from "./03. Hooks (useEffect)/CatFact";
 import { Excuses } from "./03. Hooks (useEffect)/Excuses";
 import { Navbar } from "./04. React Router DOM/Navbar";
+import { StandardForm } from "./05. Forms/StandardForm";
 
 export const ExerciseSection = () => {
   return (
@@ -63,6 +64,10 @@ export const ExerciseSection = () => {
 
       <section className="hidden" id={11}>
         <Navbar />
+      </section>
+
+      <section className="hidden" id={12}>
+        <StandardForm />
       </section>
     </div>
   );
