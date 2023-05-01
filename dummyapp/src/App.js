@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import heroImage from "./images/lambo.jpg";
-import heroImageTwo from "./images/paris.jpg";
-import heroImageThree from "./images/rarri.jpg";
+import heroImage from "./images/hero.jpg";
 
 import "./App.css";
 
@@ -62,8 +60,6 @@ function App() {
             </div>
           </div>
           <img className="hero-image" src={heroImage} />
-          <img className="hero-image-2" src={heroImageTwo} />
-          <img className="hero-image-3" src={heroImageThree} />
         </div>
       </section>
 

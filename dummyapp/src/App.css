@@ -91,6 +91,12 @@ h1, p{
 
 .hero-image {
     display: block;
+    filter: brightness(95%);
+    border-radius: 2px;
+}
+
+.hero-image-2 {
+    display: none;
 }
 
 .hero-title {
@@ -129,11 +135,18 @@ h1, p{
     .container {
         padding: 5em;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    .hero-image {
+        max-width: 450px;
+        object-fit: cover;
+        object-position: left;
+        height: 450px;
     }
 
     .hero-title-container {
-        width: 45%;
+        width: 42%;
     }
     
     .hero-title {
@@ -144,12 +157,6 @@ h1, p{
     .hero-subtitle {
         font-size: 1.5rem;
         margin: 1.5em 0;
-    }
-
-
-    .hero-image {
-        max-width: 100%;
-        height: auto;
     }
 
     .navbar {
@@ -167,5 +174,13 @@ h1, p{
 
     .navbar-list li {
         margin: 0 .5em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-image {
+        max-width: 800px;
+        width: 55%;
+        height: auto;
     }
 }
