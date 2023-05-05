@@ -65,8 +65,8 @@ h1, p{
 
 .toggle-button {
     position: absolute;
-    top: 1.85em;
-    right: 2em;
+    top: 1em;
+    right: .75em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

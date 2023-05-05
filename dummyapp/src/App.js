@@ -8,7 +8,7 @@ function App() {
   const [navListElement, setNavListElement] = useState(null);
 
   useEffect(() => {
-    setNavListElement(document.getElementsByClassName("navbar-list")[0]);
+    setNavListElement(document.getElementsByClassName("links-list")[0]);
   }, []);
 
   const toggleHandler = () => {
