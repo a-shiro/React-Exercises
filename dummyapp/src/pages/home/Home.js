@@ -27,12 +27,18 @@ const Home = () => {
       </section>
 
       <section className="popular-section">
-        <div className="card">
-          <span className="card-title">Porsche</span>
-          <img
-            className="card-image"
-            src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
-          />
+        <div>
+          <h1>Popular Choices</h1>
+          <div className="card-slider">
+            <div className="card">
+              <span className="card-title">Porsche</span>
+              <img
+                className="card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+          </div>
+          <button className="cta-button">All cars</button>
         </div>
       </section>
     </main>
