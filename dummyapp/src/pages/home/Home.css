@@ -27,14 +27,18 @@
     margin-bottom: 1em;
 }
 
+.cta-container > .cta-button:first-child {
+    margin: 0 .5em 0 0;
+}
+
 .cta-button {
     background-color: white;
     color: black;
     border: 1px solid black;
     
     font-size: 1.5em;
+    font-family: Barlow;
 
-    margin: 0 .5em 0 0;
     padding: .5em 1em .5em 1em ;
 
     cursor: pointer;
@@ -89,13 +93,12 @@
     }
 }
 
-
 /* Popular section  CSS */
 .popular-section {
     background-color: #F7F7F7  ;
     
     width: 100%;
-    padding: 3em 0;
+    padding: 4em 0;
     
     text-align: center;
 }
@@ -105,31 +108,89 @@
     font-weight: 400;
 }
 
+.card-wrapper { 
+    margin: 5em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .card {
-    width: 240px;
-    height: 140px;
+    width: 260px;
+    height: 160px;
     background-color: white;
     position: relative;
     margin: auto;
 
-    font-size: 2rem;
-    font-weight: 300;
-    border-left: 1px dashed black;
+    cursor: pointer;
 
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    transition: box-shadow .3s;
+}
 
+.card:hover .card-image {
+    right: .5em;
+}
+.card:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0);
+}
+
+.card:hover .card-title {
+    left: 1em;
 }
 
 .card-title {
+    font-size: 1.55rem;
+    font-weight: 400;
     position: absolute;
-    left: 2em;
+    left: -.75em;
+    top: .25em;
+    transition: left 0.3s;
 }
 
 .card-image {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    left: -1em;
+    bottom: -.25em;
+    right: -1.25em;
+    transition: right 0.3s, bottom 0.3s;
+}
+
+.medium-screen {
+    display: none;
+}
+
+.large-screen {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .card {
+        margin: 0;
+    }
+
+    .medium-screen { 
+        display: block;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .large-screen { 
+        display: block;
+    }
+}
+
+@media (min-width: 1600px) {
+    .card-wrapper {
+        margin: 5em 10em;
+    }
+
+    .card {
+        width: 340px;
+        height: 240px;
+    }
+
+    .card-title {
+        top: 1em;
+    }
+
 }
