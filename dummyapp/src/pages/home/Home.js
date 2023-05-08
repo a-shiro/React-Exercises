@@ -31,7 +31,7 @@ const Home = () => {
           <h1>Popular Choices</h1>
           <div className="card-wrapper">
             <div className="card">
-              <span className="card-title">Porsche 992 Cabrio --</span>
+              <span className="card-title">Porsche 992 Cabrio</span>
               <img
                 className="card-image"
                 src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
 
             <div className="card medium-screen">
-              <span className="card-title">Lamborghini Hurracan EVO --</span>
+              <span className="card-title">Lamborghini Hurracan EVO</span>
               <img
                 className="card-image"
                 src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1573743772/tfgvvsuaydikw5ad1yds.png"
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
 
             <div className="card large-screen">
-              <span className="card-title">Mercedes-Benz G63 AMG --</span>
+              <span className="card-title">Mercedes-Benz G63 AMG</span>
               <img
                 className="card-image"
                 src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_108,q_auto,w_270/v1520083160/dyneukcbulzxewb1ay5g.png"

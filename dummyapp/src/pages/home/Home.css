@@ -115,11 +115,15 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+
     width: 260px;
     height: 160px;
     background-color: white;
-    position: relative;
+
     margin: auto;
+    position: relative;
 
     cursor: pointer;
 
@@ -127,31 +131,29 @@
 }
 
 .card:hover .card-image {
-    right: .5em;
+    left: -2.5em;
+    bottom: 0;
 }
 .card:hover {
     box-shadow: 10px 10px rgba(0, 0, 0);
 }
 
-.card:hover .card-title {
-    left: 1em;
-}
-
 .card-title {
-    font-size: 1.55rem;
+    font-size: 1.35rem;
     font-weight: 400;
-    position: absolute;
-    left: -.75em;
-    top: .25em;
-    transition: left 0.3s;
+
+    margin: .5em .25em 0 .25em;
 }
 
 .card-image {
     width: 100%;
+
     position: absolute;
     bottom: -.25em;
-    right: -1.25em;
-    transition: right 0.3s, bottom 0.3s;
+    left: -1.5em;
+    
+    
+    transition: left 0.3s, bottom 0.3s;
 }
 
 .medium-screen {
@@ -168,20 +170,34 @@
     }
 
     .medium-screen { 
-        display: block;
+        display: flex;
     }
 }
 
 
 @media (min-width: 1000px) {
+    .card {
+        width: 270px;
+        height: 170px;
+    }
+
+    .popular-section h1 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
     .large-screen { 
-        display: block;
+        display: flex;
     }
 }
 
 @media (min-width: 1600px) {
+    .popular-section {
+        padding: 6em 0;
+    }
+
     .card-wrapper {
-        margin: 5em 10em;
+        margin: 8em 10em;
     }
 
     .card {
@@ -190,7 +206,6 @@
     }
 
     .card-title {
-        top: 1em;
+        margin: 1em 1em 0 1em;
     }
-
 }
