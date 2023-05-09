@@ -53,6 +53,14 @@ const Home = () => {
                 src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_108,q_auto,w_270/v1520083160/dyneukcbulzxewb1ay5g.png"
               />
             </div>
+
+            <div className="card xl-screen">
+              <span className="card-title">Mercedes-Benz G63 AMG</span>
+              <img
+                className="card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_108,q_auto,w_270/v1520083160/dyneukcbulzxewb1ay5g.png"
+              />
+            </div>
           </div>
           <button className="cta-button">All cars</button>
         </div>

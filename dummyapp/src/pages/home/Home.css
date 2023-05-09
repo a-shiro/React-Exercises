@@ -156,11 +156,7 @@
     transition: left 0.3s, bottom 0.3s;
 }
 
-.medium-screen {
-    display: none;
-}
-
-.large-screen {
+.medium-screen, .large-screen, .xl-screen {
     display: none;
 }
 
@@ -197,15 +193,19 @@
     }
 
     .card-wrapper {
-        margin: 8em 10em;
+        margin: 8em 0em;
     }
 
     .card {
-        width: 340px;
-        height: 240px;
+        width: 320px;
+        height: 220px;
     }
 
     .card-title {
         margin: 1em 1em 0 1em;
+    }
+
+    .xl-screen {
+        display: flex;
     }
 }
