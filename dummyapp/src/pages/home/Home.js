@@ -76,6 +76,7 @@ const Home = () => {
       <section className="location-section">
         <div>
           <h1>Select Place</h1>
+
           <div className="controls-wrapper">
             <button className="toggler-button selected" onClick={toggleHandler}>
               Countries
@@ -84,13 +85,27 @@ const Home = () => {
               Cities
             </button>
           </div>
-          <div>
+
+          <div className="location-card-wrapper">
             <div className="location-card">
-              <span className="">Germany</span>
-              <img
-                className=""
-                src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_108,q_auto,w_270/v1520083160/dyneukcbulzxewb1ay5g.png"
-              />
+              <span>Paris</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+            </div>
+            <div className="location-card">
+              <span>Paris</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+            </div>
+            <div className="location-card">
+              <span>Paris</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+            </div>
+            <div className="location-card">
+              <span>Paris</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+            </div>
+            <div className="location-card">
+              <span>Paris</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
             </div>
           </div>
         </div>

@@ -264,6 +264,57 @@
                 color .1s linear;
 }
 
-.location-card {
+.location-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+}
 
+.location-card {
+    max-width: 325px;
+
+    margin: auto;
+    margin-bottom: 2em;
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: start;
+}
+
+.location-card span {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0 0 .15em .5em;
+}
+
+.location-card img {
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    .location-card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        max-width: 680px;
+    }
+
+    .location-card {
+        width: 50%;
+        margin: 0 0 2em 0;
+        margin-bottom: 0;
+    }
+
+    .location-section h1 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1600px) {
+    .location-card-wrapper {
+        max-width: 1390px;
+    }
 }
