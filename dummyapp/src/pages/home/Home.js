@@ -2,6 +2,13 @@ import heroImage from "../../images/hero.jpg";
 import "./Home.css";
 
 const Home = () => {
+  const toggleHandler = (e) => {
+    const [countriesButton, citiesButton] = e.target.parentElement.children;
+
+    countriesButton.classList.toggle("selected");
+    citiesButton.classList.toggle("selected");
+  };
+
   return (
     <main>
       <section className="hero-section">
@@ -63,6 +70,29 @@ const Home = () => {
             </div>
           </div>
           <button className="cta-button">All cars</button>
+        </div>
+      </section>
+
+      <section className="location-section">
+        <div>
+          <h1>Select Place</h1>
+          <div className="controls-wrapper">
+            <button className="toggler-button selected" onClick={toggleHandler}>
+              Countries
+            </button>
+            <button className="toggler-button" onClick={toggleHandler}>
+              Cities
+            </button>
+          </div>
+          <div>
+            <div className="location-card">
+              <span className="">Germany</span>
+              <img
+                className=""
+                src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_108,q_auto,w_270/v1520083160/dyneukcbulzxewb1ay5g.png"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
