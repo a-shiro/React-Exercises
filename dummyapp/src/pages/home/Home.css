@@ -222,17 +222,21 @@
 .background-image-left {
     left: 3%;
     top: 50%;
+    width: 340px;
 }
 
 .background-image-middle {
     right: 50%;
     bottom: 0;
     left: 45%;
+    width: 220px;
+
 }
 
 .background-image-right {
     right: 3%;
     top: 10%;
+    width: 460px;
 }
 
 .location-section {
@@ -307,12 +311,16 @@
     flex-direction: column;
     
     text-align: start;
+
+    background-color: #F7F7F7;
+    color: black;
+
 }
 
 .location-card span {
     font-size: 1.35rem;
-    font-weight: 500;
-    margin: 0 0 .15em .5em;
+    font-weight: 400;
+    margin: .2em 0 .3em .5em;
 }
 
 .location-card img {
