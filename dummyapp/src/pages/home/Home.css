@@ -212,7 +212,33 @@
 
 /* Location section */
 
+.background-image-left,
+.background-image-middle,
+.background-image-right{
+    position: absolute;
+    z-index: -1;
+}
+
+.background-image-left {
+    left: 3%;
+    top: 50%;
+}
+
+.background-image-middle {
+    right: 50%;
+    bottom: 0;
+    left: 45%;
+}
+
+.background-image-right {
+    right: 3%;
+    top: 10%;
+}
+
 .location-section {
+    position: relative;
+    overflow: hidden;
+
     text-align: center;
 
     width: 100%;
@@ -291,9 +317,14 @@
 
 .location-card img {
     display: block;
+    border-radius: 2px;
 }
 
 @media (min-width: 1000px) {
+    .background-image-left {
+        top: 25%;
+    }
+
     .location-card-wrapper {
         flex-direction: row;
         flex-wrap: wrap;

@@ -1,4 +1,8 @@
 import heroImage from "../../images/hero.jpg";
+import leftWorldMap from "../../images/left-world-map-vector.png";
+import middleWorldMap from "../../images/middle-world-map-vector.png";
+import rightWorldMap from "../../images/right-world-map-vector.png";
+
 import "./Home.css";
 
 const Home = () => {
@@ -75,6 +79,10 @@ const Home = () => {
 
       <section className="location-section">
         <div>
+          <img className="background-image-left" src={leftWorldMap} />
+          <img className="background-image-middle" src={middleWorldMap} />
+          <img className="background-image-right" src={rightWorldMap} />
+
           <h1>Select Place</h1>
 
           <div className="controls-wrapper">
@@ -92,20 +100,20 @@ const Home = () => {
               <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
             </div>
             <div className="location-card">
-              <span>Paris</span>
-              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+              <span>Marbella</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573486364/ntjrtuf94bs9gjkemlh7.png" />
             </div>
             <div className="location-card">
-              <span>Paris</span>
-              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+              <span>London</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573485962/eieclwgkkjdbgb7fp8ey.png" />
             </div>
             <div className="location-card">
-              <span>Paris</span>
-              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+              <span>Monaco</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573486515/wz4mr5pvgbipd8saytse.png" />
             </div>
             <div className="location-card">
-              <span>Paris</span>
-              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573488138/euiwvpylbtzawkymw8mw.png" />
+              <span>Vienna</span>
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_200,q_auto,w_290/v1573231555/mxqi1ewcv038v0jcdslp.png" />
             </div>
           </div>
         </div>
