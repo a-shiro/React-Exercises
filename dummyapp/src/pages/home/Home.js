@@ -118,6 +118,39 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="brand-section">
+        <div>
+          <h1>Our Brands</h1>
+
+          <div className="brands-card-wrapper">
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1562524909/kb041wxyazyrn6j49trl.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1562524489/hmd9nuskyaehqwrgd0cc.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479867/pxivkqkelvgr8ntpnxrv.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479928/lxkmam1neeulzsklaxni.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479928/lxkmam1neeulzsklaxni.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479928/lxkmam1neeulzsklaxni.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479928/lxkmam1neeulzsklaxni.jpg" />
+            </div>
+            <div className="brand-card">
+              <img src="https://res.cloudinary.com/unix-center/image/upload/c_lfill,dpr_auto,f_auto,fl_progressive,g_center,h_206,q_auto,w_206/v1556479928/lxkmam1neeulzsklaxni.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
