@@ -47,10 +47,6 @@ function App() {
       </nav>
 
       <Home />
-
-      <section>
-        <div style={{ marginTop: "20em" }}>dummy div</div>
-      </section>
     </div>
   );
 }
