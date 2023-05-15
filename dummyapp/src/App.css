@@ -3,7 +3,7 @@ body {
   font-family: Barlow;
 }
 
-h1, p{
+h1, h6, p{
     margin: 0;
 }
 
@@ -103,5 +103,52 @@ h1, p{
 
     .links-list li {
         margin: 0 .75em;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f7f7f7;
+    padding: 1em 0;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3em auto;
+}
+
+.info-wrapper p {
+    font-size: 1.15rem;
+    margin: .25em 0;
+}
+
+.info-wrapper div {
+    margin: .5em 0;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.copyright-wrapper {
+    margin: .5em auto;
+    width: 95%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 750px) {
+    .info-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .info-wrapper div {
+        text-align: start;
     }
 }
