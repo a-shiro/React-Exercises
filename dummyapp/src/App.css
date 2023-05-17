@@ -20,7 +20,11 @@ h1, h6, p{
     justify-content: space-between;
     align-items: start;
 
-    margin: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    padding: 1em 2em;
 }
 
 .brand-logo {
@@ -89,7 +93,6 @@ h1, h6, p{
 @media (min-width: 1000px) {
     .navbar {
         flex-direction: row;
-        margin: 2em 3em;
     }
  
     .toggle-button {
@@ -110,6 +113,8 @@ h1, h6, p{
 footer {
     background-color: #f7f7f7;
     padding: 1em 0;
+
+    position: relative;
 }
 
 .info-wrapper {
@@ -142,13 +147,29 @@ footer {
     font-size: 1.25rem;
 }
 
+.footer-clip {
+    clip-path: polygon(100% 10%, 0 0, 100% 0);
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+
+    top: -1px;
+}
+
 @media (min-width: 750px) {
+    
     .info-wrapper {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
+    
     .info-wrapper div {
         text-align: start;
     }
+    
+    .footer-clip {
+        height: 100%;
+    }
 }
+

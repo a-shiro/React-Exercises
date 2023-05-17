@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { useState } from "react";
 import Home from "./pages/home/Home";
 
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Fragment>
       <nav className="navbar">
         <div>
           <a className="brand-logo">RentX</a>
@@ -49,6 +49,7 @@ function App() {
       <Home />
 
       <footer>
+        <div className="footer-clip"></div>
         <div className="info-wrapper">
           <div>
             <h6 className="info-title">Contacts:</h6>
@@ -72,7 +73,7 @@ function App() {
           <p>Copyright © 2023 RentX. All rights reserved</p>
         </div>
       </footer>
-    </div>
+    </Fragment>
   );
 }
 

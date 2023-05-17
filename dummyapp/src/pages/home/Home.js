@@ -33,13 +33,18 @@ const Home = () => {
               <a className="cta-button">About</a>
             </div>
           </div>
-
-          <img className="hero-image" src={heroImage} />
+          <div className="hero-image-wrapper">
+            <img className="hero-image" src={heroImage} />
+          </div>
         </div>
       </section>
 
       <section className="popular-section">
         <div>
+          <div className="popular-section-clip-top"></div>
+          <div className="popular-section-clip-bottom"></div>
+          <div className="checker-pattern"></div>
+
           <h1>Popular Choices</h1>
           <div className="card-wrapper">
             <div className="card">
@@ -122,6 +127,9 @@ const Home = () => {
 
       <section className="brand-section">
         <div>
+          <div className="brand-section-clip-top"></div>
+          <div className="brand-section-clip-bottom"></div>
+
           <h1>Our Brands</h1>
 
           <div className="brands-card-wrapper">
