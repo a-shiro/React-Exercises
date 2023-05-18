@@ -48,6 +48,10 @@ const Home = () => {
           <h1>Popular Choices</h1>
           <div className="card-wrapper">
             <div className="card">
+              <div className="card-clip"></div>
+              <div className="card-clip-2"></div>
+              <div className="card-clip-3"></div>
+
               <span className="card-title">Porsche 992 Cabrio</span>
               <img
                 className="card-image"
@@ -56,6 +60,10 @@ const Home = () => {
             </div>
 
             <div className="card medium-screen">
+              <div className="card-clip"></div>
+              <div className="card-clip-2"></div>
+              <div className="card-clip-3"></div>
+
               <span className="card-title">Lamborghini Hurracan EVO</span>
               <img
                 className="card-image"
@@ -64,6 +72,10 @@ const Home = () => {
             </div>
 
             <div className="card large-screen">
+              <div className="card-clip"></div>
+              <div className="card-clip-2"></div>
+              <div className="card-clip-3"></div>
+
               <span className="card-title">Mercedes-Benz G63 AMG</span>
               <img
                 className="card-image"
@@ -72,6 +84,10 @@ const Home = () => {
             </div>
 
             <div className="card xl-screen">
+              <div className="card-clip"></div>
+              <div className="card-clip-2"></div>
+              <div className="card-clip-3"></div>
+
               <span className="card-title">Mercedes-Benz G63 AMG</span>
               <img
                 className="card-image"
