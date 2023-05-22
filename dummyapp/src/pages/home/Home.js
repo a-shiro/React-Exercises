@@ -3,6 +3,7 @@ import leftWorldMap from "../../images/left-world-map-vector.png";
 import middleWorldMap from "../../images/middle-world-map-vector.png";
 import rightWorldMap from "../../images/right-world-map-vector.png";
 import aboutImage from "../../images/mclaren.jpg";
+import carVector from "../../images/mercedes-vector.svg";
 
 import "./Home.css";
 
@@ -145,6 +146,7 @@ const Home = () => {
         <div>
           <div className="brand-section-clip-top"></div>
           <div className="brand-section-clip-bottom"></div>
+          <img className="background-image" src={carVector} />
 
           <h1>Our Brands</h1>
 

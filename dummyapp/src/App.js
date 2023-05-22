@@ -1,6 +1,7 @@
 import { Fragment, useEffect } from "react";
 import { useState } from "react";
 import Home from "./pages/home/Home";
+import Catalog from "./pages/catalog/Catalog";
 
 import "./App.css";
 
@@ -46,7 +47,9 @@ function App() {
         </a>
       </nav>
 
-      <Home />
+      {/* <Home /> */}
+
+      <Catalog />
 
       <footer>
         <div className="footer-clip"></div>
