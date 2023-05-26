@@ -9,7 +9,7 @@ const Catalog = () => {
 
   return (
     <main>
-      <section>
+      <section className="catalog-section">
         <div className="catalog-container">
           <div className="filters-dropdown">
             <button onClick={toggleFiltersVisibility}>Filters &darr;</button>
@@ -36,17 +36,81 @@ const Catalog = () => {
               <input name="priceRangeFrom" type="number" placeholder="from $" />
               <input name="priceRangeTo" type="number" placeholder="to $" />
             </div>
+            <div>
+              <button>Clear filters</button>
+            </div>
           </div>
 
-          <div className="cards-wrapper">
-            <div className="card">
-              <div className="card-clip"></div>
-              <div className="card-clip-2"></div>
-              <div className="card-clip-3"></div>
+          <div className="catalog-card-wrapper">
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
 
               <span className="card-title">Porsche 992 Cabrio</span>
               <img
-                className="card-image"
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
+                src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
+              />
+            </div>
+            <div className="catalog-card">
+              <div className="catalog-card-clip"></div>
+
+              <span className="card-title">Porsche 992 Cabrio</span>
+              <img
+                className="catalog-card-image"
                 src="https://res.cloudinary.com/unix-center/image/upload/c_fill,dpr_auto,f_auto,fl_progressive,g_center,h_125,q_auto,w_315/v1580913291/ozwawbomlmkclzllldx1.png"
               />
             </div>
