@@ -7,6 +7,12 @@ const Catalog = () => {
     filtersWrapper.classList.toggle("visible");
   };
 
+  const toggleDropdownVisibility = (e) => {
+    document
+      .querySelector(`.${e.target.parentElement.className} ul`)
+      .classList.toggle("visible");
+  };
+
   return (
     <main>
       <section className="catalog-section">
@@ -16,28 +22,39 @@ const Catalog = () => {
           </div>
 
           <div className="filters-wrapper">
-            <div>
-              <p>Car Type</p>
-              <select>
-                <option>All cars</option>
-                <option>Convertible</option>
-                <option>SUV</option>
-                <option>Sports Car</option>
-                <option>Hyper Car</option>
-                <option>Luxury Sedan</option>
-              </select>
+            <div className="type-filter">
+              <span>Car Type</span>
+              <button
+                className="type-filter-button"
+                onClick={toggleDropdownVisibility}
+              >
+                All Cars
+              </button>
+              <ul className="filter-ul">
+                <li>All cars</li>
+                <li>Convertible</li>
+                <li>SUV</li>
+                <li>Sports car</li>
+                <li>Hyper car</li>
+                <li>Luxury Sedan</li>
+              </ul>
             </div>
             <div>
-              <p>Brand</p>
+              <span>Brand</span>
               <select></select>
             </div>
             <div>
-              <p>Price range</p>
+              <span>Price range</span>
               <input name="priceRangeFrom" type="number" placeholder="from $" />
               <input name="priceRangeTo" type="number" placeholder="to $" />
             </div>
             <div>
-              <button>Clear filters</button>
+              <span>Horse power</span>
+              <input value={150} type="number" />
+              <input value={1500} type="number" />
+            </div>
+            <div>
+              <button className="clear-filters-button">Clear filters</button>
             </div>
           </div>
 

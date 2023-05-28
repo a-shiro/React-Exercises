@@ -22,14 +22,84 @@
 .filters-wrapper {
     background-color: #f7f7f7;
     
-    padding: 1em;
+    padding: 2em 1em;
     
     display: none;
     
     border-top: 1px solid rgb(199, 199, 199);
 }
 
-.filters-wrapper select, .filters-wrapper input {
+.filters-wrapper span {
+    display: inline-block;
+
+    font-size: 1.10rem;
+    font-weight: 500;
+    
+    margin: .5em 0;
+}
+
+.type-filter { 
+    width: 100%;
+
+    position: relative;
+}
+
+.type-filter-button {
+    text-align: start;
+
+    width: 100%;
+    padding: 1em;
+
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    background-color: white;
+
+    cursor: pointer;
+    outline: none;
+
+    font-size: 1.15rem;
+}
+
+.filter-ul {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin-top: -1px;
+    
+    overflow-y: auto;
+
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 3px;
+
+    font-weight: 500;
+
+    display: none;
+
+    background-color: white;
+
+    list-style: none;
+
+    position: absolute;
+
+    z-index: 99;
+}
+
+.type-filter li {
+    padding: 1em;
+    border-color: rgb(199, 199, 199);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.type-filter li:hover {
+    background-color: #f7f7f7;
+}
+
+
+/* .filters-wrapper select, .filters-wrapper input {
     width: 100%;
     padding: 1em;
 
@@ -42,24 +112,16 @@
     font-size: 1rem;
 }
 
-.filters-wrapper select {
-    margin-bottom: 1.25em;
-}
-
 .filters-wrapper input {
     border: 1px solid rgb(199, 199, 199);
 
     width: 50%;
-}
 
-.filters-wrapper p {
-    font-size: 1.10rem;
-    font-weight: 500;
-    
-    margin: 0 0 .5em 0;
-}
+    margin-bottom: 1.25em;
+} */
 
-.filters-wrapper button {
+
+.clear-filters-button {
     border: 1px solid rgb(199, 199, 199);
     border-radius: 2px;
 
@@ -75,8 +137,6 @@
 
 .visible {
     display: block;
-
-    padding-bottom: 3em;
 }
 
 .catalog-card-wrapper {
