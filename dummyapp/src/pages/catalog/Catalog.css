@@ -38,13 +38,15 @@
     margin: .5em 0;
 }
 
-.type-filter { 
+.type-filter, .brand-filter { 
     width: 100%;
 
     position: relative;
+
+    margin-bottom: 1em;
 }
 
-.type-filter-button {
+.filter-button {
     text-align: start;
 
     width: 100%;
@@ -86,7 +88,7 @@
     z-index: 99;
 }
 
-.type-filter li {
+.filter-ul li {
     padding: 1em;
     border-color: rgb(199, 199, 199);
     border-radius: 2px;
@@ -94,12 +96,12 @@
     cursor: pointer;
 }
 
-.type-filter li:hover {
+.filter-ul li:hover {
     background-color: #f7f7f7;
 }
 
 
-/* .filters-wrapper select, .filters-wrapper input {
+.filters-wrapper input {
     width: 100%;
     padding: 1em;
 
@@ -118,7 +120,8 @@
     width: 50%;
 
     margin-bottom: 1.25em;
-} */
+
+}
 
 
 .clear-filters-button {

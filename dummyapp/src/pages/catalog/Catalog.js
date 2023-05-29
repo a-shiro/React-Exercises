@@ -2,15 +2,36 @@ import "./Catalog.css";
 
 const Catalog = () => {
   const filtersWrapper = document.querySelector(".filters-wrapper");
+  const typeDropdownList = document.querySelector(".type-filter ul");
+  const brandDropdownList = document.querySelector(".brand-filter ul");
 
   const toggleFiltersVisibility = () => {
     filtersWrapper.classList.toggle("visible");
   };
 
   const toggleDropdownVisibility = (e) => {
-    document
-      .querySelector(`.${e.target.parentElement.className} ul`)
-      .classList.toggle("visible");
+    const list = document.querySelector(
+      `.${e.target.parentElement.className} ul`
+    );
+
+    if (list === typeDropdownList) {
+      brandDropdownList.classList.remove("visible");
+      typeDropdownList.classList.toggle("visible");
+      return;
+    }
+
+    typeDropdownList.classList.remove("visible");
+    brandDropdownList.classList.toggle("visible");
+  };
+
+  const clickHandler = (e) => {
+    const nameDisplay = e.target.parentElement.parentElement.children[1];
+
+    // ToDo: Add filtered query to DB
+
+    nameDisplay.textContent = e.target.textContent;
+    typeDropdownList.classList.remove("visible");
+    brandDropdownList.classList.remove("visible");
   };
 
   return (
@@ -25,12 +46,12 @@ const Catalog = () => {
             <div className="type-filter">
               <span>Car Type</span>
               <button
-                className="type-filter-button"
+                className="filter-button"
                 onClick={toggleDropdownVisibility}
               >
                 All Cars
               </button>
-              <ul className="filter-ul">
+              <ul onClick={clickHandler} className="filter-ul">
                 <li>All cars</li>
                 <li>Convertible</li>
                 <li>SUV</li>
@@ -39,19 +60,42 @@ const Catalog = () => {
                 <li>Luxury Sedan</li>
               </ul>
             </div>
-            <div>
+
+            <div className="brand-filter">
               <span>Brand</span>
-              <select></select>
+              <button
+                className="filter-button"
+                onClick={toggleDropdownVisibility}
+              >
+                All brands
+              </button>
+              <ul onClick={clickHandler} className="filter-ul">
+                <li>All brands</li>
+                <li>Porsche</li>
+                <li>Lamborghini</li>
+                <li>Ferrari</li>
+                <li>Bentley</li>
+                <li>McLaren</li>
+              </ul>
             </div>
+
             <div>
               <span>Price range</span>
-              <input name="priceRangeFrom" type="number" placeholder="from $" />
-              <input name="priceRangeTo" type="number" placeholder="to $" />
+              <div>
+                <input
+                  name="priceRangeFrom"
+                  type="number"
+                  placeholder="from $"
+                />
+                <input name="priceRangeTo" type="number" placeholder="to $" />
+              </div>
             </div>
             <div>
               <span>Horse power</span>
-              <input value={150} type="number" />
-              <input value={1500} type="number" />
+              <div>
+                <input defaultValue={150} type="number" />
+                <input defaultValue={1500} type="number" />
+              </div>
             </div>
             <div>
               <button className="clear-filters-button">Clear filters</button>
