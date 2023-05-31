@@ -34,6 +34,13 @@ const Catalog = () => {
     brandDropdownList.classList.remove("visible");
   };
 
+  const clearFilters = () => {
+    document.querySelector(".type-filter .filter-button").textContent =
+      "All cars";
+    document.querySelector(".brand-filter .filter-button").textContent =
+      "All brands";
+  };
+
   return (
     <main>
       <section className="catalog-section">
@@ -49,7 +56,7 @@ const Catalog = () => {
                 className="filter-button"
                 onClick={toggleDropdownVisibility}
               >
-                All Cars
+                All cars
               </button>
               <ul onClick={clickHandler} className="filter-ul">
                 <li>All cars</li>
@@ -83,22 +90,30 @@ const Catalog = () => {
               <span>Price range</span>
               <div>
                 <input
+                  defaultValue={500}
                   name="priceRangeFrom"
                   type="number"
                   placeholder="from $"
                 />
-                <input name="priceRangeTo" type="number" placeholder="to $" />
+                <input
+                  defaultValue={2000}
+                  name="priceRangeTo"
+                  type="number"
+                  placeholder="to $"
+                />
               </div>
             </div>
             <div>
               <span>Horse power</span>
               <div>
-                <input defaultValue={150} type="number" />
-                <input defaultValue={1500} type="number" />
+                <input defaultValue={150} type="number" placeholder="from" />
+                <input defaultValue={1500} type="number" placeholder="to" />
               </div>
             </div>
             <div>
-              <button className="clear-filters-button">Clear filters</button>
+              <button onClick={clearFilters} className="clear-filters-button">
+                Clear filters
+              </button>
             </div>
           </div>
 
