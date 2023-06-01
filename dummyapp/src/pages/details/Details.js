@@ -7,7 +7,7 @@ const Details = () => {
       <section className="details-section">
         <h1 className="details-title">Porsche 911 Cabrio</h1>
         <div className="rent-info-wrapper">
-          <img className="details-photo" src={detailsPhoto} />
+          <img className="rent-car-image" src={detailsPhoto} />
           <div>
             <div className="rent-details">
               <span className="price">
@@ -15,7 +15,7 @@ const Details = () => {
               </span>
               <span>The minimum rental period is 2 days.</span>
             </div>
-            <div className="car-details">
+            <div className="car-specs">
               <span>Car specifications</span>
               <table>
                 <tbody>
@@ -40,6 +40,13 @@ const Details = () => {
             </div>
             <div>
               <button className="rent-button">Rent</button>
+            </div>
+          </div>
+          <div className="details-info">
+            <div className="toggles-wrapper">
+              <button className="option-button active">Description</button>
+              <button className="option-button ">Rental conditions</button>
+              <button className="option-button">Available locations</button>
             </div>
           </div>
         </div>

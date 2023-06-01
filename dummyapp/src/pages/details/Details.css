@@ -17,7 +17,7 @@
     margin: auto
 }
 
-.details-photo {
+.rent-car-image {
     display: block;
     border-radius: 3px;
 
@@ -46,35 +46,35 @@
     font-size: 1.05rem;
 }
 
-.car-details {
+.car-specs {
     margin: 1.5em 0;
 }
 
-.car-details span {
+.car-specs span {
     font-size: 1.5rem;
     font-weight: 500;
 
     margin-bottom: .75em;
 }
 
-.car-details table {
+.car-specs table {
     font-size: 1.15rem;
     width: 100%;
     border-collapse: collapse;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.car-details table tr {
+.car-specs table tr {
     background-color: #f7f7f7;
     
 }
 
-.car-details table td {
+.car-specs table td {
     padding: .5em;
     border: 1px solid rgb(199, 199, 199); 
 }
 
-.car-details table tr td:first-child {
+.car-specs table tr td:first-child {
     width: 70%;
 }
 
@@ -87,7 +87,7 @@
     font-family: Barlow;
 
     width: 100%;
-    margin-top: 1em;
+    margin: 1em 0;
     padding: .5em 1em .5em 1em ;
 
     cursor: pointer;
@@ -96,6 +96,42 @@
 }
 
 .rent-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.toggles-wrapper {
+    display: flex;
+    padding-left: 1px;
+}
+
+.option-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 33.3%;
+    height: 3.5em;
+
+    background-color: white;
+    color: black;
+
+    border: 1px solid black;
+
+    margin-right: -1px;
+
+    font-size: 1.1rem;
+    font-family: Barlow;
+
+    cursor: pointer;
+
+    transition: transform .2s linear,
+                box-shadow .2s linear,
+                background-color .2s linear,
+                color .1s linear,
+}
+
+.active {
     background-color: black;
     color: white;
 }
