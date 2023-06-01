@@ -2,7 +2,7 @@ import { Fragment, useEffect } from "react";
 import { useState } from "react";
 import Home from "./pages/home/Home";
 import Catalog from "./pages/catalog/Catalog";
-
+import Details from "./pages/details/Details";
 import "./App.css";
 
 function App() {
@@ -49,7 +49,9 @@ function App() {
 
       {/* <Home /> */}
 
-      <Catalog />
+      {/* <Catalog /> */}
+
+      <Details />
 
       <footer>
         <div className="footer-clip"></div>
