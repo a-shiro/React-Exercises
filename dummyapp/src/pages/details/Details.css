@@ -14,12 +14,8 @@
     flex-direction: column;
 
     width: 90%;
+    max-width: 1200px;
     margin: auto
-}
-
-.car-info-wrapper {
-    border-bottom: 1px solid rgb(199, 199, 199);
-    margin-bottom: 2em;
 }
 
 .rent-car-image {
@@ -167,5 +163,49 @@
 }
 
 .details-info {
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 2em;
+    margin: auto;
+
+    border-top: 1px solid rgb(199, 199, 199);
+
     position: relative;
+}
+
+@media (min-width: 750px) {
+    .rent-car-image {
+        margin: 1.5em auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .rent-car-image {
+        object-fit: cover;
+        width: 63%;
+        margin: 0;
+    }
+
+    .car-info-wrapper {
+        width: 35%;
+    }
+
+    .details-info-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 2em 0;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .rent-car-image {
+        width: 60%;
+        object-fit: contain;
+
+    }
+    .car-info-wrapper {
+        width: 40%;
+    }
 }
