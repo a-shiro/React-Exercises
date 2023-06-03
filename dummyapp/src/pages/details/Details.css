@@ -9,7 +9,7 @@
     font-weight: 500;
 }
 
-.rent-info-wrapper {
+.details-info-wrapper {
     display: flex;
     flex-direction: column;
 
@@ -17,14 +17,20 @@
     margin: auto
 }
 
+.car-info-wrapper {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    margin-bottom: 2em;
+}
+
 .rent-car-image {
     display: block;
     border-radius: 3px;
 
+    max-width: 675px;
     margin: 1.5em 0;
 }
 
-.rent-info-wrapper span {
+.details-info-wrapper span {
     display: block;
 }
 
@@ -134,4 +140,32 @@
 .active {
     background-color: black;
     color: white;
+}
+
+.option {
+    display: none;
+
+    margin: 2em 0;
+}
+
+.visible {
+    display: block;
+}
+
+.option div {
+    margin: 1em;
+}
+
+.option h3 {
+    font-size: 1.35rem;
+}
+
+.option p {
+    margin: .5em 0 2em 0;
+
+    font-size: 1.05rem;
+}
+
+.details-info {
+    position: relative;
 }
