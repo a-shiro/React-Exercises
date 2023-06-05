@@ -1,7 +1,33 @@
+import { useEffect } from "react";
 import "./Details.css";
-import detailsPhoto from "../../images/details-photo.webp";
+import { useState } from "react";
 
 const Details = () => {
+  const [activeImage, setActiveImage] = useState(null);
+  const [images, setImages] = useState([
+    "https://www.cnet.com/a/img/resize/a0df8c10c688337b60463f157af3f8d74437c329/hub/2021/07/08/dd48196f-c09f-4e48-9f2a-a4b11c0d6ab2/2021-porsche-911-carrera-s-cabriolet-7.jpg?auto=webp&width=1200",
+    "https://www.cnet.com/a/img/resize/b6599ab3f787f57ad17a02d3b63193e9de602cf7/hub/2021/07/08/dc415f32-bb20-462c-bf6e-1306d3bd3458/2021-porsche-911-carrera-s-cabriolet-4.jpg?auto=webp&width=1200",
+    "https://www.cnet.com/a/img/resize/bc217bd4a97799b6077857dbdfebcedfd053b5f4/hub/2021/07/08/d989ed75-825c-46a5-b1b1-1b4b805cddd7/2021-porsche-911-carrera-s-cabriolet-10.jpg?auto=webp&width=1200",
+  ]);
+
+  useEffect(() => {
+    const queryData = () => {
+      setActiveImage(images[0]);
+    };
+
+    if (!activeImage) {
+      queryData();
+    }
+  }, []);
+
+  const changeImageHangler = (e) => {
+    console.log(images);
+    const x = images.shift();
+    setActiveImage(x);
+
+    setImages([...images, activeImage]);
+  };
+
   const toggleOptionHandler = (e) => {
     const element = e.target;
 
@@ -27,7 +53,13 @@ const Details = () => {
       <section className="details-section">
         <h1 className="details-title">Porsche 911 Cabrio</h1>
         <div className="details-info-wrapper">
-          <img className="rent-car-image" src={detailsPhoto} />
+          <div className="rent-car-image-wrapper">
+            <img className="rent-car-image" src={activeImage} />
+            <button className="button-prev">&lt;</button>
+            <button onClick={changeImageHangler} className="button-next">
+              &gt;
+            </button>
+          </div>
 
           <div className="car-info-wrapper">
             <div className="rent-details">
