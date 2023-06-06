@@ -1,0 +1,73 @@
+.about-hero-section-wrapper {
+}
+
+.about-heading {
+    text-align: center;
+
+    max-width: 550px;
+    padding: 0 1em;
+    margin: auto;
+}
+
+.about-heading  h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: .25em;
+}
+
+.about-heading p {
+    font-size: 1.35rem;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+
+    margin: 1em auto;
+    width: 260px;
+    height: 260px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.about-card span {
+    font-size: 1.5rem;
+    margin: .25em 0;
+}
+
+.about-card p {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.about-card a {
+    font-size: .75rem;
+    
+    text-decoration: none;
+    text-align: center;
+    
+    color: #e46400;
+
+    position: absolute;
+    bottom: 1em;
+
+    width: 95%;
+}
+
+.icon-wrapper {
+    width: 5.5em;
+    background-color: rgb(239, 239, 239);
+    border-radius: 100%;
+
+}
+
+.icon {
+    width: 100%;
+    padding: 1em;
+}

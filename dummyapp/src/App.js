@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "./pages/home/Home";
 import Catalog from "./pages/catalog/Catalog";
 import Details from "./pages/details/Details";
+import About from "./pages/about/About";
 import "./App.css";
 
 function App() {
@@ -51,7 +52,9 @@ function App() {
 
       {/* <Catalog /> */}
 
-      <Details />
+      {/* <Details /> */}
+
+      <About />
 
       <footer>
         <div className="footer-clip"></div>
