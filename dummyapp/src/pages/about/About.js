@@ -6,11 +6,12 @@ import locationIcon from "../../images/locations.png";
 import customerServiceIcon from "../../images/customer-service.png";
 import aboutImage from "../../images/mclaren.jpg";
 import companyHistoryImage from "../../images/company-history.jpg";
+import carBrandsImage from "../../images/car-brands.png";
 import { useRef } from "react";
 
 const About = () => {
   const refHistory = useRef(null);
-  const refCars = useRef(null);
+  const refBrands = useRef(null);
   const refService = useRef(null);
   const refLocation = useRef(null);
 
@@ -35,9 +36,9 @@ const About = () => {
             iconText=" Scroll icons created by Freepik - Flaticon"
           />
           <HeroCard
-            title="Cars"
+            title="Brands"
             subtitle="Only the finest examples"
-            sectionRef={refCars}
+            sectionRef={refBrands}
             icon={carsIcon}
             iconLink="https://www.flaticon.com/free-icons/car"
             iconText="Car icons created by Freepik - Flaticon"
@@ -61,7 +62,7 @@ const About = () => {
         </div>
       </section>
 
-      <section ref={refHistory} className="info-section-about">
+      <section className="info-section-about" ref={refHistory}>
         <div className="info-wrapper-about">
           <h1>RentX - Redefining luxury car rentals since 2010 --</h1>
 
@@ -118,10 +119,10 @@ const About = () => {
         <img src={companyHistoryImage} alt="section-image" />
       </section>
 
-      <section className="about-section" ref={refCars}>
-        <div className="about-wrapper">
-          <div className="about-text-wrapper">
-            <h1>Our cars --</h1>
+      <section className="info-section-about" ref={refBrands}>
+        <div className="info-wrapper-about">
+          <h1>Brands --</h1>
+          <div>
             <p>
               At <span>RentX</span>, we take pride in offering a meticulously
               curated collection of luxury cars from the world's most
@@ -129,69 +130,81 @@ const About = () => {
               the pinnacle of engineering, craftsmanship, and elegance, ensuring
               that your driving experience is nothing short of extraordinary.
             </p>
-            <p>
-              Aston Martin: With their unmistakable style and exhilarating
-              performance, Aston Martin vehicles embody the essence of British
-              luxury. Rent an Aston Martin to experience the perfect harmony of
-              power, grace, and timeless design.
-            </p>
-            <p>
-              Bentley: Renowned for their handcrafted interiors and exceptional
-              comfort, Bentley cars provide an unparalleled level of opulence.
-              From grand touring models to powerful sports cars, driving a
-              Bentley is an experience reserved for those who appreciate the
-              finest things in life.
-            </p>
-            <p>
-              Ferrari: Embrace the passion and adrenaline of Italian automotive
-              excellence with a Ferrari rental. These iconic sports cars combine
-              breathtaking design, cutting-edge technology, and blistering
-              performance, delivering an unmatched thrill on the road.
-            </p>
-            <p>
-              Lamborghini: Rent a Lamborghini to unleash the raw power and
-              striking aesthetics of these legendary supercars. With their
-              distinct angular lines and roaring engines, Lamborghinis turn
-              heads wherever they go, making a bold statement of unrivaled
-              performance.
-            </p>
-            <p>
-              Mercedes-Benz: A symbol of sophistication and innovation,
-              Mercedes-Benz offers a diverse range of luxury vehicles catering
-              to various tastes and needs. From luxurious sedans to powerful
-              SUVs, Mercedes-Benz combines elegance with cutting-edge
-              technology.
-            </p>
-            <p>
-              Porsche: Experience the perfect balance between performance and
-              comfort with a Porsche rental. These German-engineered sports cars
-              offer precision handling, thrilling acceleration, and unmistakable
-              style, making every drive an exhilarating adventure.
-            </p>
-            <p>
-              Rolls-Royce: Renting a Rolls-Royce is the epitome of refined
-              luxury. Known for their unparalleled craftsmanship, attention to
-              detail, and iconic Spirit of Ecstasy hood ornament, Rolls-Royce
-              cars deliver a regal and serene driving experience like no other.
-            </p>
-            <p>
-              Maserati: Embodying Italian elegance and exhilaration, Maserati
-              cars blend luxury and performance seamlessly. From seductive grand
-              tourers to dynamic sports cars, Maserati captures the essence of
-              Italian flair and driving pleasure.
-            </p>
 
+            <ul>
+              <li>
+                <span>Aston Martin:</span> With their unmistakable style and
+                exhilarating performance, Aston Martin vehicles embody the
+                essence of British luxury. Rent an Aston Martin to experience
+                the perfect harmony of power, grace, and timeless design.
+              </li>
+              <li>
+                <span>Bentley</span>: Renowned for their handcrafted interiors
+                and exceptional comfort, Bentley cars provide an unparalleled
+                level of opulence. From grand touring models to powerful sports
+                cars, driving a Bentley is an experience reserved for those who
+                appreciate the finest things in life.
+              </li>
+              <li>
+                <span>Ferrari</span>: Embrace the passion and adrenaline of
+                Italian automotive excellence with a Ferrari rental. These
+                iconic sports cars combine breathtaking design, cutting-edge
+                technology, and blistering performance, delivering an unmatched
+                thrill on the road.
+              </li>
+              <li>
+                <span>Lamborghini</span>: Rent a Lamborghini to unleash the raw
+                power and striking aesthetics of these legendary supercars. With
+                their distinct angular lines and roaring engines, Lamborghinis
+                turn heads wherever they go, making a bold statement of
+                unrivaled performance.
+              </li>
+              <li>
+                <span>Mercedes-Benz</span>: A symbol of sophistication and
+                innovation, Mercedes-Benz offers a diverse range of luxury
+                vehicles catering to various tastes and needs. From luxurious
+                sedans to powerful SUVs, Mercedes-Benz combines elegance with
+                cutting-edge technology.
+              </li>
+              <li>
+                <span>Porsche</span>: Experience the perfect balance between
+                performance and comfort with a Porsche rental. These
+                German-engineered sports cars offer precision handling,
+                thrilling acceleration, and unmistakable style, making every
+                drive an exhilarating adventure.
+              </li>
+              <li>
+                <span>Rolls-Royce</span>: Renting a Rolls-Royce is the epitome
+                of refined luxury. Known for their unparalleled craftsmanship,
+                attention to detail, and iconic Spirit of Ecstasy hood ornament,
+                Rolls-Royce cars deliver a regal and serene driving experience
+                like no other.
+              </li>
+              <li>
+                <span>Maserati</span>: Embodying Italian elegance and
+                exhilaration, Maserati cars blend luxury and performance
+                seamlessly. From seductive grand tourers to dynamic sports cars,
+                Maserati captures the essence of Italian flair and driving
+                pleasure.
+              </li>
+            </ul>
             <p>
-              When you choose RentX, you gain access to an extraordinary fleet
-              of luxury cars from these esteemed brands. Our commitment to
+              This is merely a part of our selection. When you choose{" "}
+              <span>RentX</span>, you gain access to an extraordinary fleet of
+              luxury cars from these esteemed brands. Our commitment to
               excellence ensures that each vehicle in our collection is
               meticulously maintained, thoroughly inspected, and ready to
               provide you with an unforgettable driving experience.
             </p>
           </div>
-          <img src={aboutImage} />
         </div>
+        <img
+          className="brands-image"
+          src={carBrandsImage}
+          alt="section-image"
+        />
       </section>
+
       <section className="about-section" ref={refService}>
         <div className="about-wrapper">
           <div className="about-text-wrapper">
