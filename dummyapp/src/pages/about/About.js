@@ -5,6 +5,7 @@ import carsIcon from "../../images/cars.png";
 import locationIcon from "../../images/locations.png";
 import customerServiceIcon from "../../images/customer-service.png";
 import aboutImage from "../../images/mclaren.jpg";
+import companyHistoryImage from "../../images/company-history.jpg";
 import { useRef } from "react";
 
 const About = () => {
@@ -60,16 +61,17 @@ const About = () => {
         </div>
       </section>
 
-      <section ref={refHistory} className="about-section">
-        <div className="about-wrapper">
-          <div className="about-text-wrapper">
-            <h1>RentX - Redefining Luxury Car Rentals Since 2010 --</h1>
+      <section ref={refHistory} className="info-section-about">
+        <div className="info-wrapper-about">
+          <h1>RentX - Redefining luxury car rentals since 2010 --</h1>
+
+          <div>
             <p>
               In 2010, <span>RentX</span> was born out of a shared passion for
               luxury automobiles and a vision to provide discerning individuals
               with an unparalleled driving experience. Founded by a team of
-              automotive enthusiasts, RentX set out to revolutionize the way
-              people perceive and indulge in luxury car rentals.
+              automotive enthusiasts, we set out to revolutionize the way people
+              perceive and indulge in luxury car rentals.
             </p>
             <p>
               From its humble beginnings, <span>RentX</span> quickly established
@@ -81,7 +83,7 @@ const About = () => {
             </p>
             <p>
               With a commitment to exceptional service and an unwavering
-              dedication to exceeding expectations, RentX swiftly gained
+              dedication to exceeding expectations, the company swiftly gained
               recognition as a trusted name in the industry. By setting new
               standards for quality, reliability, and personalized attention, we
               earned the loyalty of clients who craved an extraordinary driving
@@ -96,35 +98,24 @@ const About = () => {
               that our customers always have access to the pinnacle of
               automotive engineering and design.
             </p>
-
             <p>
-              At RentX, we understand that luxury is more than just a label—it's
-              a lifestyle. Our dedication to impeccable craftsmanship, attention
-              to detail, and a seamless customer experience has allowed us to
-              build enduring relationships with clients from around the world.
-              Whether it's for a special occasion, a business trip, or simply
-              indulging in a moment of pure luxury, RentX is committed to
-              delivering an unforgettable journey tailored to your exact
-              desires.
-            </p>
-
-            <p>
-              As we forge ahead into the future, RentX remains steadfast in its
+              As we forge ahead into the future, we remain steadfast in our
               commitment to innovation, anticipating and adapting to the
               ever-changing needs of our esteemed clientele. With our unwavering
               passion for luxury vehicles and a team of professionals dedicated
-              to exceeding expectations, RentX continues to redefine the
-              boundaries of luxury car rentals, ensuring that each drive is an
-              extraordinary experience that lingers long after the journey ends.
+              to exceeding expectations, <span>RentX</span> continues to
+              redefine the boundaries of luxury car rentals, ensuring that each
+              drive is an extraordinary experience that lingers long after the
+              journey ends.
             </p>
-
             <p>
-              Welcome to RentX, where extraordinary moments on wheels become
-              reality.
+              Welcome to <span>RentX</span>, where extraordinary moments on
+              wheels become reality.
             </p>
           </div>
-          <img src={aboutImage} />
         </div>
+
+        <img src={companyHistoryImage} alt="section-image" />
       </section>
 
       <section className="about-section" ref={refCars}>

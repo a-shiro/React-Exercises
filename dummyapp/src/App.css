@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Barlow;
@@ -7,8 +11,16 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 185, 185);
 }
 
 .navbar {

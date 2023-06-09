@@ -8,7 +8,7 @@
 .hero-titles-wrapper-about {
     text-align: center;
 
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .hero-titles-wrapper-about > h1 {
@@ -91,6 +91,46 @@
     color: #e46400;
 }
 
+.info-section-about {
+    padding: 0 1em 3em 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-wrapper-about > h1 {
+    text-align: center;
+    
+    padding-bottom: 1em;
+    
+    font-size: 1.75rem;
+}
+
+.info-wrapper-about > div {
+    overflow-y: hidden;
+    height: 450px;
+}
+
+.info-wrapper-about > div:hover {
+    overflow-y: scroll;
+}
+
+.info-wrapper-about div > p {
+    font-size: 1.15rem;
+    margin-bottom: 1em;
+}
+
+.info-wrapper-about div > p > span {
+    font-weight: 600;
+}
+
+.info-section-about > img {
+    display: block;
+
+    margin-top: 2em;
+}
+
+/* Media queries ----------- */
 
 @media (min-width: 750px) {
     .hero-cards-wrapper-about {
@@ -105,42 +145,106 @@
     .hero-card-about {
         margin: 0;
     }
+
+    .info-section-about {
+        max-width: 750px;
+        margin: auto;
+    }
 }
+
 
 @media (min-width: 1000px) {
     .hero-section-about {
         flex-direction: row;
 
-        max-width: 1050px;
+        max-width: 1100px;
         margin: auto;
+        padding: 5em 1em;
     }
     
     .hero-titles-wrapper-about {
         text-align: start;
-        order: 2;
+        
         width: 35%;
+        margin-left: 1em;
+
+        order: 2;
+    }
+
+    .hero-titles-wrapper-about > h1 {
+        font-size: 2.5rem;
     }
 
     .hero-titles-wrapper-about > p {
         margin: 0;
+        max-width: 500px;
     }
 
     .hero-cards-wrapper-about {
         width: 64%;
         order: 1;
     }
+
+    .info-section-about {
+        max-width: 1000px;
+    }
+
+    .info-wrapper-about > h1 {
+        font-size: 2rem;
+    }
+
+    .info-wrapper-about > div > p {
+        font-size: 1.25rem;
+    }
 }
 
 @media(min-width: 1600px) {
     .hero-section-about {
-        max-width: 1350px;
+        max-width: 1450px;
     }
 
     .hero-titles-wrapper-about {
         width: 50%;
     }
 
+    .hero-titles-wrapper-about > h1 {
+        font-size: 3rem;
+    }
+
+    .hero-titles-wrapper-about > p {
+        font-size: 1.5rem;
+    }
+
     .hero-cards-wrapper-about {
         width: 50%;
     }
+
+    .info-section-about {
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 1500px;
+        padding-top: 3em;
+    }
+
+    .info-wrapper-about {
+        width: 44%;
+    }
+    
+    .info-wrapper-about > h1 {
+        text-align: start;
+    }
+
+    .info-wrapper-about > div {
+        height: 480px;
+    }
+    
+    .info-wrapper-about > div > p {
+        width: 600px;
+    }
+
+    .info-section-about > img {
+        margin-top: 0;
+        width: 55%;
+    }   
 }
