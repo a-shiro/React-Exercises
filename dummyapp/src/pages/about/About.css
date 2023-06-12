@@ -2,29 +2,10 @@
     display: flex;
     flex-direction: column;
 
-    padding: 3em 1em;
-}
+    margin: 2em 1em;
+    padding-bottom: 2em;
 
-.hero-titles-wrapper-about {
-    text-align: center;
-
-    margin-bottom: 2em;
-}
-
-.hero-titles-wrapper-about > h1 {
-    font-weight: 600;
-    font-size: 2.25rem;
-    
-    margin-bottom: .25em;
-}
-
-.hero-titles-wrapper-about > p {
-    font-size: 1.25rem;
-
-    color: #7f7f7f;
-    
-    max-width: 400px;
-    margin: auto;
+    border-bottom: 1px solid black;
 }
 
 .hero-cards-wrapper-about {
@@ -50,7 +31,7 @@
 }
 
 .hero-card-icon-wrapper-about {
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(245, 245, 245);
     
     width: 120px;
 
@@ -76,7 +57,7 @@
 .hero-card-about > a {
     font-size: .70rem;
 
-    color: rgb(185, 185, 185);
+    color: rgb(200, 200, 200);
 
     text-decoration: none;
     text-align: center;
@@ -130,7 +111,10 @@
 
 .info-section-about > img {
     display: block;
+
     margin-top: 2em;
+
+    border-radius: 3px;
 }
 
 .brands-image {
@@ -163,35 +147,13 @@
 @media (min-width: 1000px) {
     .hero-section-about {
         flex-direction: row;
+        justify-content: space-evenly;
 
         max-width: 1100px;
-        margin: auto;
-        padding: 5em 1em;
+        margin: auto auto 5em auto;
+        padding: 5em 0;
     }
     
-    .hero-titles-wrapper-about {
-        text-align: start;
-        
-        width: 35%;
-        margin-left: 1em;
-
-        order: 2;
-    }
-
-    .hero-titles-wrapper-about > h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-titles-wrapper-about > p {
-        margin: 0;
-        max-width: 500px;
-    }
-
-    .hero-cards-wrapper-about {
-        width: 64%;
-        order: 1;
-    }
-
     .info-section-about {
         max-width: 1000px;
     }
@@ -207,25 +169,17 @@
 
 @media(min-width: 1600px) {
     .hero-section-about {
-        max-width: 1450px;
-    }
-
-    .hero-titles-wrapper-about {
-        width: 50%;
-    }
-
-    .hero-titles-wrapper-about > h1 {
-        font-size: 3rem;
-    }
-
-    .hero-titles-wrapper-about > p {
-        font-size: 1.5rem;
+        max-width: 1500px;
     }
 
     .hero-cards-wrapper-about {
-        width: 50%;
+        justify-content: space-evenly;        
+        
+        width: 100%;
+        max-width: none;
     }
 
+ 
     .info-section-about {
         flex-direction: row;
         justify-content: space-between;
